@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'wordpress_auth_lite',
+    'wordpress_db',
     'dummy',
 )
 
@@ -114,7 +115,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # django-wordpress-auth-lite
-
 # dummy keys, replace by your wordpress keys (in wp-config.php)
 WORDPRESS_LOGGED_IN_KEY = 'Io@|5Mq`Vkd$|BtXRD%S9uS,+ib6[VqVVmp|fji>^nx1!+pX]a@z?@=z[z(u-qcE'
 WORDPRESS_LOGGED_IN_SALT = 'hD[qi3.[b5;j!Mk-P|#%55 arulz7h5|#sk5}vPM;tw}){^^@1YCj:=-%W]`|Z%$'
+
+# worpress_db app
+# replace by the table of the wordpress db that contains pasteque's users
+WORDPRESS_PT_USER_TABLE = 'wp_pasteque'
