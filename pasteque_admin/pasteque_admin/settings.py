@@ -83,7 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     },
-    # django-wordpress-auth-lite, replace fields with your own settings
+    # WordPress database, replace fields with your own settings
     'wordpress': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'pasteque_master_wp',
@@ -91,6 +91,15 @@ DATABASES = {
         'PASSWORD': 'pasteque',
         'HOST': 'localhost',
         'PORT': 3306,
+        # replace by the name of your test database
+        'TEST': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'pasteque_master_wp_test',
+            'USER': 'pasteque',
+            'PASSWORD': 'pasteque',
+            'HOST': 'localhost',
+            'PORT': 3306,
+        },
     },
 }
 
