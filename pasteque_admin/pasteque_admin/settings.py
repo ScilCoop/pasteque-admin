@@ -19,7 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
-# This is a dummy key, only used in developpement
+# This is a dummy key, must only used in developpement
 SECRET_KEY = 'y=#!(+pw(1$m9h2+lv&x6(+zd!3x6uj32$+wc$f_u+(4n#c1p9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'wordpress_auth_lite',
     'wordpress_db',
+    'pasteque_db',
     'dummy',
 )
 

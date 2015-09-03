@@ -19,7 +19,7 @@ class UtilsTestCase(TestCase):
 
         WpPtUserDatabase.objects.using('wordpress').create(
             user_id=3, host='localhost', port='4242',
-            database='foo', user='poutine', password='tinepou'
+            name='foo', user='poutine', password='tinepou'
         )
 
     def tearDown(self):

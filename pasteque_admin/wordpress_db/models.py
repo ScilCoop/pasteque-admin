@@ -10,7 +10,7 @@ class WpPtUserDatabase(models.Model):
     user_id = models.BigIntegerField(primary_key=True, db_column='user_id')
     host = models.CharField(max_length=52, null=False, db_column='host')
     port = models.IntegerField(null=False, db_column='port')
-    database = models.CharField(max_length=100, null=False, db_column='database')
+    name = models.CharField(max_length=100, null=False, db_column='database')
     user = models.CharField(max_length=100, null=False, db_column='user')
     password = models.CharField(max_length=100, null=False, db_column='password')
 
